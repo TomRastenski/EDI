@@ -44,11 +44,11 @@
         <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
     </head>
     <body>
-      <div id="container" style="width: 30%; height: 10%"></div>
+      <div class="container-fluid text-center" >id="container" style="width: 30%; height: 10%"></div>
       <script>
           anychart.onDocumentReady(function() {
 
-<div class="container-fluid text-center">
+
 var data = [
     {x: "female", value: 51},
     {x: "male", value: 37},
@@ -76,7 +76,7 @@ chart.legend().itemsLayout("vertical");
 
 chart.container('container');
 chart.draw();
-</div
+
 
 });
       </script>
