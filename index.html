@@ -37,66 +37,28 @@
         </div>
     </div>
         
-        
-    <head>
-        <title>JavaScript Pie Chart</title>
-        <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-core.min.js"></script>
-        <script src="https://cdn.anychart.com/releases/8.0.1/js/anychart-pie.min.js"></script>
-    </head>
-    <body>
-      <div id="container" style="width: 30%; height: 10%"></div>
-      <script>
-          anychart.onDocumentReady(function() {
+     <script src="chart1.js"></script>
+    <script src="chart1.js"></script>
 
-
-var data = [
-    {x: "female", value: 51},
-    {x: "male", value: 37},
-    {x: "other", value: 12},
-    
-];
-
-
-var chart = anychart.pie();
-
-
-chart.title("gender of players");
-
-
-chart.data(data);
-
-
-chart.sort("desc");  
-
-
-chart.legend().position("left");
-
-chart.legend().itemsLayout("vertical");  
-
-
-chart.container('container');
-chart.draw();
-
-
-});
-      </script>
-    </body>
+    <div id="container"></div>
 
 
     <div class="table">
-        <table class="table table-bordered table-hover table-condensed" style="width:80%">
-            <thead><tr><th title="Field #1">place</th>
-            <th title="Field #2">first_name</th>
-            <th title="Field #3">last_name</th>
-            <th title="Field #4">game_id</th>
-            <th title="Field #5">gender</th>
-            </tr></thead>
-            <tbody><tr>
-            <td align="right">1</td>
-            <td>Melina</td>
-            <td>Giovannilli</td>
-            <td>58-9525880</td>
-            <td>Female</td>
+        <table class="table-bordered table-hover table-condensed" style="width:80%">
+            <tr>
+                <th title="Field #1">place</th>
+                <th title="Field #2">first_name</th>
+                <th title="Field #3">last_name</th>
+                <th title="Field #4">game_id</th>
+                <th title="Field #5">gender</th>
+            </tr>
+            <tbody>
+            <tr>
+                <td align="right">1</td>
+                <td>Melina</td>
+                <td>Giovannilli</td>
+                <td>58-9525880</td>
+                <td>Female</td>
             </tr>
             <tr>
             <td align="right">2</td>
