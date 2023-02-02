@@ -108,4 +108,52 @@
   };
   xhr.send();
 </script>
+    
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "data2.json", true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var jsonData = JSON.parse(xhr.responseText);
+
+      var tableBody = document.getElementById("tableBody");
+
+      for (var i = 0; i < jsonData.length; i++) {
+        var row = jsonData[i];
+        var tr = document.createElement("tr");
+        tr.innerHTML = "<td>" + row.column1 + "</td>" +
+                       "<td>" + row.column2 + "</td>" +
+                       "<td>" + row.column3 + "</td>" +
+                       "<td>" + row.column4 + "</td>" + 
+                       "<td>" + row.column5 + "</td>";
+        tableBody.appendChild(tr);
+      }
+    }
+  };
+  xhr.send();
+</script>
+    
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "data3.json", true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var jsonData = JSON.parse(xhr.responseText);
+
+      var tableBody = document.getElementById("tableBody");
+
+      for (var i = 0; i < jsonData.length; i++) {
+        var row = jsonData[i];
+        var tr = document.createElement("tr");
+        tr.innerHTML = "<td>" + row.column1 + "</td>" +
+                       "<td>" + row.column2 + "</td>" +
+                       "<td>" + row.column3 + "</td>" +
+                       "<td>" + row.column4 + "</td>" + 
+                       "<td>" + row.column5 + "</td>";
+        tableBody.appendChild(tr);
+      }
+    }
+  };
+  xhr.send();
+</script>
 
