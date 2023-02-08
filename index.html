@@ -110,15 +110,17 @@
       
       </script>
 
-<th><button onclick="loadJSON1(function(response) {
+<hr></hr>    
+    
+<th><button class="button" onclick="loadJSON1(function(response) {
     var data = JSON.parse(response);
     buildChart(data);
   });">Data 1 pie chart</button></th>
-  <th><button onclick="loadJSON2(function(response) {
+  <th><button class="button" onclick="loadJSON2(function(response) {
     var data = JSON.parse(response);
     buildChart(data);
   });">Data 2 pie chart</button></th>
-  <th><button onclick="loadJSON3(function(response) {
+  <th><button class="button" onclick="loadJSON3(function(response) {
     var data = JSON.parse(response);
     buildChart(data);
   });">Data 3 pie chart</button></th>
@@ -161,13 +163,13 @@
     xobj.send(null);  
   }
   </script>
-          
-    
+  </center>         
+   
     <body>
       <canvas id="pieChart" width="100" height="100"></canvas>
     </body>
 
-</center> 
+
     </div>
     </body>
     <footer>
